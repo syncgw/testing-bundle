@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	SyncML information table
+
+ 	@package	sync*gw
+ 	@subpackage	SyncML
+ 	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+   	@license 	LGPL-3.0-or-later
+
+-->
+<CodePage xmlns="https://github.com/syncgw/syncgw/schema/syncgw.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="https://github.com/syncgw/syncgw/schema https://github.com/syncgw/syncgw/schema/syncgw.xsd">
+
+ <Header>
+  <PID>4049</PID>
+  <Name>-//SyncML//DTD SyncML 1.0//EN</Name>
+  <Tag>SyncML</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-RepPro-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Request and Response Schema</Title>
+  <Ver>1.0</Ver>
+  <URI>syncml:SyncML</URI>
+  <CodePage>0</CodePage>
+ </Header>
+ <Header>
+  <PID>4049</PID>
+  <Name>-//SyncML//DTD SyncML 1.0//EN</Name>
+  <Tag>SyncML</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-RepPro-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Request and Response Schema</Title>
+  <Ver>1.0</Ver>
+  <URI>syncml:SyncML1.0</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Header>
+  <PID>4051</PID>
+  <Name>-//SyncML//DTD SyncML 1.1//EN</Name>
+  <Tag>SyncML</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-RepPro-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Request and Response Schema</Title>
+  <Ver>1.1</Ver>
+  <URI>syncml:SyncML1.1</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Header>
+  <PID>4609</PID>
+  <Name>-//SyncML//DTD SyncML 1.2//EN</Name>
+  <Tag>SyncML</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-RepPro-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Request and Response Schema</Title>
+  <Ver>1.2</Ver>
+  <URI>syncml:SyncML1.2</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Defs>
+  <Add>0x05</Add>
+  <Alert>0x06</Alert>
+  <Archive>0x07</Archive>
+  <Atomic>0x08</Atomic>
+  <Chal>0x09</Chal>
+  <Cmd>0x0a</Cmd>
+  <CmdID>0x0b</CmdID>
+  <CmdRef>0x0c</CmdRef>
+  <Copy>0x0d</Copy>
+  <Cred>0x0e</Cred>
+  <Data>0x0f</Data>
+  <Delete>0x10</Delete>
+  <Exec>0x11</Exec>
+  <Final>0x12</Final>
+  <Get>0x13</Get>
+  <Item>0x14</Item>
+  <Lang>0x15</Lang>
+  <LocName>0x16</LocName>
+  <LocURI>0x17</LocURI>
+  <Map>0x18</Map>
+  <MapItem>0x19</MapItem>
+  <Meta>0x1a</Meta>
+  <MsgID>0x1b</MsgID>
+  <MsgRef>0x1c</MsgRef>
+  <NoResp>0x1d</NoResp>
+  <NoResults>0x1e</NoResults>
+  <Put>0x1f</Put>
+  <Replace>0x20</Replace>
+  <RespURI>0x21</RespURI>
+  <Results>0x22</Results>
+  <Search>0x23</Search>
+  <Sequence>0x24</Sequence>
+  <SessionID>0x25</SessionID>
+  <SftDel>0x26</SftDel>
+  <Source>0x27</Source>
+  <SourceRef>0x28</SourceRef>
+  <Status>0x29</Status>
+  <Sync>0x2a</Sync>
+  <SyncBody>0x2b</SyncBody>
+  <SyncHdr>0x2c</SyncHdr>
+  <SyncML>0x2d</SyncML>
+  <Target>0x2e</Target>
+  <TargetRef>0x2f</TargetRef>
+  <VerDTD>0x31</VerDTD>
+  <VerProto>0x32</VerProto>
+  <NumberOfChanges>0x33</NumberOfChanges>
+  <MoreData>0x34</MoreData>
+  <Field>0x35</Field>
+  <Filter>0x36</Filter>
+  <Record>0x37</Record> 
+  <FilterType>0x38</FilterType>
+  <SourceParent>0x39</SourceParent>
+  <TargetParent>0x3a</TargetParent>
+  <Move>0x3b</Move>
+  <Correlator>0x3c</Correlator>
+ </Defs>
+
+</CodePage>

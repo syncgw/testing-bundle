@@ -1,0 +1,36 @@
+{
+	"name" : "syncgw/testing-bundle",
+	"type" : "syncgw-bundle",
+	"license": "LGPL-3.0-or-later",
+	"homepage" : "https://github.com/syncgw/testing-bundle",
+	"authors" : [{
+			"name" : "Florian Daeumling",
+			"homepage" : "https://github.com/toteph42"
+		}
+	],
+	"funding" : [{
+			"type" : "other",
+			"url" : "https://www.paypal.com/donate/?hosted_button_id=DS6VK49NAFHEQ"
+		}
+	],
+	"require" : {
+		"php" : ">=8.1",
+		"syncgw/core-bundle" : "*",
+		"syncgw/file-bundle" : "*",
+		"syncgw/mysql-bundle" : "*",
+		"syncgw/roundcube-bundle" : "*",
+		"syncgw/myapp-bundle" : "*",
+		"syncgw/mail-bundle" : "*",
+		"syncgw/activesync-bundle" : "*",
+		"syncgw/webdav-bundle" : "*",
+		"syncgw/mapi-bundle" : "*",
+		"syncgw/rops-bundle" : "*",
+		"syncgw/ics-bundle" : "*",
+		"syncgw/rpc-bundle" : "*"	
+	},
+	"support" : {
+		"issues" : "https://github.com/syncgw/syncgw/issues",
+		"source" : "https://github.com/syncgw/testing-bundle",
+		"docs" : "https://github.com/syncgw/testing-bundle"
+	}
+}

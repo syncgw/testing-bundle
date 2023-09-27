@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	DevInfo device information table
+
+  	@package	sync*gw
+ 	@subpackage	SyncML
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ 	@license 	LGPL-3.0-or-later
+ 
+-->
+<CodePage xmlns="https://github.com/syncgw/syncgw/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/syncgw/syncgw/schema https://github.com/syncgw/syncgw/schema/syncgw.xsd">
+
+ <Header>
+  <PID>4050</PID>
+  <Name>-//SyncML//DTD DevInf 1.0//EN</Name>
+  <Tag>DevInf</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-DevInfo-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Devinf Request and Response Schema</Title>
+  <Ver>1.0</Ver>
+  <URI>syncml:DevInf1.0</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Header>
+  <PID>4052</PID>
+  <Name>-//SyncML//DTD DevInf 1.1//EN</Name>
+  <Tag>DevInf</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-DevInfo-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Devinf Request and Response Schema</Title>
+  <Ver>1.1</Ver>
+  <URI>syncml:DevInf1.1</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Header>
+  <PID>4611</PID>
+  <Name>-//SyncML//DTD DevInf 1.2//EN</Name>
+  <Tag>DevInf</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-DevInfo-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>SyncML Devinf Request and Response Schema</Title>
+  <Ver>1.2</Ver>
+  <URI>syncml:DevInf1.2</URI>
+  <CodePage>0</CodePage>
+ </Header>
+
+ <Defs>
+  <CTCap>0x05</CTCap>
+  <CTType>0x06</CTType>
+  <DataStore>0x07</DataStore>
+  <DataType>0x08</DataType>
+  <DevID>0x09</DevID>
+  <DevInf>0x0a</DevInf>
+  <DevTyp>0x0b</DevTyp>
+  <DisplayName>0x0c</DisplayName>
+  <DSMem>0x0d</DSMem>
+  <Ext>0x0e</Ext>
+  <FwV>0x0f</FwV>
+  <HwV>0x10</HwV>
+  <Man>0x11</Man>
+  <MaxGUIDSize>0x12</MaxGUIDSize>
+  <MaxID>0x13</MaxID>
+  <MaxMem>0x14</MaxMem>
+  <Mod>0x15</Mod>
+  <OEM>0x16</OEM>
+  <ParamName>0x17</ParamName>
+  <PropName>0x18</PropName>
+  <Rx>0x19</Rx>
+  <Rx-Pref>0x1a</Rx-Pref>
+  <SharedMem>0x1b</SharedMem>
+  <MaxSize>0x1c</MaxSize>
+  <SourceRef>0x1d</SourceRef>
+  <SwV>0x1e</SwV>
+  <SyncCap>0x1f</SyncCap>
+  <SyncType>0x20</SyncType>
+  <Tx>0x21</Tx>
+  <Tx-Pref>0x22</Tx-Pref>
+  <ValEnum>0x23</ValEnum>
+  <VerCT>0x24</VerCT>
+  <VerDTD>0x25</VerDTD>
+  <XNam>0x26</XNam>
+  <XVal>0x27</XVal>
+  <UTC>0x28</UTC>
+  <SupportNumberOfChanges>0x29</SupportNumberOfChanges>
+  <SupportLargeObjs>0x2a</SupportLargeObjs>
+  <Property>0x2b</Property>
+  <PropParam>0x2c</PropParam>
+  <MaxOccur>0x2d</MaxOccur>
+  <NoTruncate>0x2e</NoTruncate>
+  <Filter-Rx>0x30</Filter-Rx>
+  <FilterCap>0x31</FilterCap>
+  <FilterKeyword>0x32</FilterKeyword>
+  <FieldLevel>0x33</FieldLevel>
+  <SupportHierarchicalSync>0x34</SupportHierarchicalSync>
+ </Defs>
+
+</CodePage>

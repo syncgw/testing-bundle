@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!--
+
+   	MetaInfo device information table
+
+ 	@package	sync*gw
+ 	@subpackage	SyncML
+  	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ 	@license 	LGPL-3.0-or-later
+
+-->
+<CodePage xmlns="https://github.com/syncgw/syncgw/schema/syncgw.xsd"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="https://github.com/syncgw/syncgw/schema https://github.com/syncgw/syncgw/schema/syncgw.xsd">
+
+ <Header>
+  <PID>4610</PID>
+  <Name>-//SyncML//DTD MetaInf 1.1//EN</Name>
+  <Tag>MetInf</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-MetaInfo-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>MetaInfo Request and Response Schema</Title>
+  <Ver>1.1</Ver>
+  <URI>syncml:MetInf</URI>
+  <CodePage>1</CodePage>
+ </Header>
+ <Header>
+  <PID>4610</PID>
+  <Name>-//SyncML//DTD MetaInf 1.1//EN</Name>
+  <Tag>MetInf</Tag>
+  <Link>http://www.openmobilealliance.org/tech/dtd/OMA-SyncML-MetaInfo-DTD-V1_1_2-20030505-D.dtd</Link>
+  <Title>MetaInfo Request and Response Schema</Title>
+  <Ver>1.1</Ver>
+  <URI>syncml:MetInf1.1</URI>
+  <CodePage>1</CodePage>
+ </Header>
+ <Header>
+  <PID>4610</PID>
+  <Name>-//SyncML//DTD MetaInf 1.2//EN</Name>
+  <Tag>MetInf</Tag>
+  <Link>http://www.openmobilealliance.org/Tech/DTD/OMA-TS-SyncML_MetaInfo_DTD-V1_2-20050303-D.dtd</Link>
+  <Title>MetaInfo Request and Response Schema</Title>
+  <Ver>1.2</Ver>
+  <URI>syncml:MetInf1.2</URI>
+  <CodePage>1</CodePage>
+ </Header>
+ 
+ <Defs>
+  <Anchor>0x05</Anchor>
+  <EMI>0x06</EMI>
+  <Format>0x07</Format>
+  <FreeID>0x08</FreeID>
+  <FreeMem>0x09</FreeMem>
+  <Last>0x0a</Last>
+  <Mark>0x0b</Mark>
+  <MaxMsgSize>0x0c</MaxMsgSize>
+  <Mem>0x0d</Mem>
+  <MetInf>0x0e</MetInf>
+  <Next>0x0f</Next>
+  <NextNonce>0x10</NextNonce>
+  <SharedMem>0x11</SharedMem>
+  <Size>0x12</Size>
+  <Type>0x13</Type>
+  <Version>0x14</Version>
+  <MaxObjSize>0x15</MaxObjSize>
+  <FieldLevel>0x16</FieldLevel>
+ </Defs>
+
+</CodePage>
