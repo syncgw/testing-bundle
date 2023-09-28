@@ -1,5 +1,6 @@
 {
 	"name" : "syncgw/testing-bundle",
+	"description" : "sync•gw testing bundle.",
 	"type" : "syncgw-bundle",
 	"license": "LGPL-3.0-or-later",
 	"homepage" : "https://github.com/syncgw/testing-bundle",
