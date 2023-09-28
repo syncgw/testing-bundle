@@ -25,19 +25,21 @@ use syncgw\mapi\mapiHTTP;
 require_once('../../Functions.php');
 
 $cnf = Config::getInstance();
-$cnf->updVar(Config::DBG_SCRIPT, 'LoadMapiDecode');
+$cnf->updVar(Config::DBG_SCRIPT, 'mapiDecode');
 $cnf->updVar(Config::DBG_EXCL, [
 
 	'syncgw\lib\User',
 	'syncgw\lib\Log',
 	'syncgw\lib\XML',
 	'syncgw\lib\Config:getVar',
+	'syncgw\lib\Server:shutDown',
 ]);
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 $parms = explode('&', $_SERVER['QUERY_STRING']);
 
 foreach ($parms as $parm) {
+
 	list($c, $p) = explode('=', $parm);
 	switch($c) {
 	// Cmd=GetProps
@@ -64,6 +66,7 @@ $db   = DB::getInstance();
 if (strpos($uid, '@'))
 	list($uid, $host) = explode('@', $uid);
 if (!$db->Authorize($uid, $host, $cnf->getVar(Config::DBG_UPW))) {
+
 	msg('+++ Login failed!', Config::CSS_ERR);
    	exit;
 }
@@ -81,7 +84,9 @@ $n = str_replace([ 'req', 'mkresp', 'resp' ], [ null, null, null ], $mod);
 $reqXML = $cnf->getVar(Config::TMP_DIR).$cmd.$n.'.xml';
 
 if (substr($mod, 0, 3) != 'req') {
+
 	if (!file_exists($reqXML)) {
+
 		Msg('+++ Please call first decoding of <'.$cmd.'> request ['.$n.']', Config::CSS_WARN);
 		exit;
 	}
@@ -92,13 +97,13 @@ if (substr($mod, 0, 3) != 'req') {
 }
 
 if (substr($mod, 0, 2) == 're') {
-	$fnam = '..'.DIRECTORY_SEPARATOR.'mimedata'.DIRECTORY_SEPARATOR.'mapi'.DIRECTORY_SEPARATOR.strtolower($cmd).
-			'_'.$mod.'.bin';
+	$fnam = $cnf->getVar(Config::ROOT).'testing-bundle/mimedata/mapi/'.strtolower($cmd).'_'.$mod.'.bin';
 	Msg('Loading "'.$fnam.'"');
 	$bdy = file_get_contents($fnam);
 }
 
 if (substr($mod, 0, 3) == 'req') {
+
 	$http->updHTTPVar(HTTP::SERVER, 'REQUEST_METHOD', 'POST');
 	$http->updHTTPVar(HTTP::SERVER, 'REQUEST_URI', '/mapi/1');
 	$http->updHTTPVar(HTTP::SERVER, 'HTTP_X_REQUESTTYPE', $cmd);
@@ -109,18 +114,21 @@ if (substr($mod, 0, 3) == 'req') {
 	Msg::InfoMsg($http->getHTTPVar(HTTP::RCV_BODY), 'Decoded <'.$cmd.'> Request');
 
 	$xml = $http->getHTTPVar(HTTP::RCV_BODY);
-	$xml->saveFile($reqXML);
+	if (is_object($xml))
+		$xml->saveFile($reqXML);
 } else { // resp / mkresp
+
 	$http->updHTTPVar(HTTP::SND_HEAD, 'X-Requesttype', $cmd);
 
 	if (substr($mod, 0, 4) == 'resp') {
+
 		$http->addBody($bdy);
 		Msg('Encoding "'.$cmd.'" response');
 	} else {
+
 		$mapi = mapiHandler::getInstance();
 		if ($xml = $mapi->Parse($cmd, mapiHTTP::MKRESP))
 			$http->addBody($xml);
-		Config::getInstance()->updVar(Config::DBG_SCRIPT, 'LoadMapiDecodeResp');
 		Msg('Creating "'.$cmd.'" response');
 	}
 	$http->checkOut();
