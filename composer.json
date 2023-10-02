@@ -1,6 +1,11 @@
 {
 	"name" : "syncgw/testing-bundle",
 	"description" : "sync•gw testing bundle.",
+    "repositories" : [{
+            "type" : "composer",
+            "url" : "https://repo.packagist.org"
+    	}
+    ],
 	"type" : "syncgw-bundle",
 	"license": "LGPL-3.0-or-later",
 	"homepage" : "https://github.com/syncgw/testing-bundle",
@@ -16,22 +21,21 @@
 	],
 	"require" : {
 		"php" : ">=8.1",
-		"syncgw/core-bundle" : ">=9.19.78",
-		"syncgw/file-bundle" : ">=9.19.78",
-		"syncgw/mysql-bundle" : ">=9.19.78",
-		"syncgw/roundcube-bundle" : ">=9.19.78",
-		"syncgw/myapp-bundle" : ">=9.19.78",
-		"syncgw/mail-bundle" : ">=9.19.78",
-		"syncgw/activesync-bundle" : ">=9.19.78",
-		"syncgw/webdav-bundle" : ">=9.19.78",
-		"syncgw/mapi-bundle" : ">=9.19.78",
-		"syncgw/rops-bundle" : ">=9.19.78",
-		"syncgw/ics-bundle" : ">=9.19.78",
-		"syncgw/rpc-bundle" : ">=9.19.78"	
+		"syncgw/core-bundle" : ">=9.19.80",
+		"syncgw/file-bundle" : ">=9.19.80",
+		"syncgw/mysql-bundle" : ">=9.19.80",
+		"syncgw/roundcube-bundle" : ">=9.19.80",
+		"syncgw/myapp-bundle" : ">=9.19.80",
+		"syncgw/mail-bundle" : ">=9.19.80",
+		"syncgw/activesync-bundle" : ">=9.19.80",
+		"syncgw/mapi-bundle" : ">=9.19.80",
+		"syncgw/rops-bundle" : ">=9.19.80",
+		"syncgw/ics-bundle" : ">=9.19.80",
+		"syncgw/rpc-bundle" : ">=9.19.80"	
 	},
 	"support" : {
 		"issues" : "https://github.com/syncgw/syncgw/issues",
 		"source" : "https://github.com/syncgw/testing-bundle",
-		"docs" : "https://github.com/syncgw/doc-bundle"
+		"docs" : "https://github.com/syncgw/testing-bundle"
 	}
 }

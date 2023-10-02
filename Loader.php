@@ -79,7 +79,7 @@ spl_autoload_register(function ($class): bool {
 			foreach (ErrorHandler::Stack() as $msg)
  		       echo '<code style="color:red;">'.htmlspecialchars($msg).'</code><br>';
 		echo '<br>';
-		exit;
+		return false;
 	}
 
 	// autoload class file - we only take care about our own files
