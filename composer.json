@@ -28,6 +28,7 @@
 		"syncgw/myapp-bundle" : ">=9.19.80",
 		"syncgw/mail-bundle" : ">=9.19.80",
 		"syncgw/activesync-bundle" : ">=9.19.80",
+		"syncgw/webdav-bundle" : ">=9.19.80",
 		"syncgw/mapi-bundle" : ">=9.19.80",
 		"syncgw/rops-bundle" : ">=9.19.80",
 		"syncgw/ics-bundle" : ">=9.19.80",
