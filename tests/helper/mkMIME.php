@@ -7,7 +7,7 @@ declare(strict_types=1);
  *
  *	@package	sync*gw
  *	@subpackage	Tools
- *	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved
+ *	@copyright	(c) 2008 - 2024 Florian Daeumling, Germany. All right reserved
  * 	@license 	LGPL-3.0-or-later
  *
  */
@@ -33,7 +33,7 @@ $out = '<?xml version="1.0" encoding="UTF-8"?>'."\n".
 '    MIME file extension mapping table'."\n\n".
 ' 	@package	sync*gw'."\n".
 ' 	@subpackage	Core'."\n".
-'	@copyright	(c) 2008 - 2023 Florian Daeumling, Germany. All right reserved'."\n".
+'	@copyright	(c) 2008 - 2024 Florian Daeumling, Germany. All right reserved'."\n".
 ' 	@license 	LGPL-3.0-or-later'."\n\n".
 '-->'."\n".
 '<MIME xmlns="https://github.com/toteph42/syncgw/downloads/schema/syncgw.xsd"'."\n".
