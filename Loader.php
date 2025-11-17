@@ -8,7 +8,7 @@ use syncgw\lib\ErrorHandler;
  *
  *	@package	sync*gw
  *	@subpackage	Testing
- *	@copyright	(c) 2008 - 2024 Florian Daeumling, Germany. All right reserved
+ *	@copyright	(c) 2008 - 2025 Florian Daeumling, Germany. All right reserved
  * 	@license 	LGPL-3.0-or-later
  */
 
