@@ -17,7 +17,8 @@ composer require syncgw/testing-bundle
 Start the Testing bundle by opening the page `http://[your-domain.tld]/[path to application directory]/vendor/syncgw/testing-bundle` in your favorite browser.
 
 ## License ##
-This plugin is released under the [GNU General Public License v3.0](https://github.com/toteph42/syncgw/blob/master/syncgw/LICENSE).
+
+This software is released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
 ## Donation ##
 
